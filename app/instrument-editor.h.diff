@@ -1,0 +1,9 @@
+--- instrument-editor.h~	Fri Mar 12 09:04:07 1999
++++ instrument-editor.h	Sun Jul  9 15:07:13 2000
+@@ -23,5 +23,6 @@
+ void            instrument_editor_set_instrument    (STInstrument *);
+ STInstrument*   instrument_editor_get_instrument    (void);
+ void            instrument_editor_update            (void);                     /* instrument data has changed, redraw */
++void            instrument_editor_enable            (void);
+ 
+ #endif /* _INSTRUMENT_EDITOR_H */

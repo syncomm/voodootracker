@@ -1,0 +1,85 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:571: checking for a BSD compatible install
+configure:624: checking whether build environment is sane
+configure:681: checking whether make sets ${MAKE}
+configure:727: checking for working aclocal
+configure:740: checking for working autoconf
+configure:753: checking for working automake
+configure:766: checking for working autoheader
+configure:779: checking for working makeinfo
+configure:796: checking whether to enable maintainer-specific portions of Makefiles
+configure:889: checking for gnome-config
+configure:926: checking if /usr/bin/gnome-config works
+configure:934: checking for orbit-config
+configure:970: checking for orbit-idl
+configure:1004: checking for working ORBit environment
+configure:1040: checking for gnorba libraries
+configure:1123: checking how to run the C preprocessor
+configure:1144: cc -E  conftest.c >/dev/null 2>conftest.out
+configure:1205: checking for pthread_create in -lpthread
+configure:1224: cc -o conftest    conftest.c -lpthread   1>&5
+configure:1429: checking for gtk-config
+configure:1464: checking for GTK - version >= 1.1.15
+configure:1565: cc -o conftest  -I/usr/lib/glib/include -I/usr/X11R6/include   conftest.c -L/usr/lib -L/usr/X11R6/lib -lgtk -lgdk -rdynamic -lgmodule -lglib -ldl -lXi -lXext -lX11 -lm  1>&5
+configure:1669: checking for SmcSaveYourselfDone in -lSM
+configure:1688: cc -o conftest   -I/usr/lib/glib/include -I/usr/X11R6/include  -L/usr/lib -L/usr/X11R6/lib -lgtk -lgdk -rdynamic -lgmodule -lglib -ldl -lXi -lXext -lX11 -lm conftest.c -lSM  -lICE  1>&5
+configure:1717: checking for X11/SM/SMlib.h
+configure:1727: cc -E  -I/usr/lib/glib/include -I/usr/X11R6/include conftest.c >/dev/null 2>conftest.out
+configure:1765: checking for XpmFreeXpmImage in -lXpm
+configure:1784: cc -o conftest   -I/usr/lib/glib/include -I/usr/X11R6/include  -L/usr/lib -L/usr/X11R6/lib -lgtk -lgdk -rdynamic -lgmodule -lglib -ldl -lXi -lXext -lX11 -lm conftest.c -lXpm   1>&5
+configure:1816: checking for gcc
+configure:1929: checking whether the C compiler (gcc  ) works
+configure:1945: gcc -o conftest   -I/usr/lib/glib/include -I/usr/X11R6/include  conftest.c  1>&5
+configure:1971: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:1976: checking whether we are using GNU C
+configure:1985: gcc -E conftest.c
+configure:2004: checking whether gcc accepts -g
+configure:2046: checking for ranlib
+configure:2079: checking for pthread.h
+configure:2089: cc -E  -I/usr/lib/glib/include -I/usr/X11R6/include conftest.c >/dev/null 2>conftest.out
+configure:2116: checking for pthread_create in -lpthread
+configure:2159: checking for ANSI C header files
+configure:2172: cc -E  -I/usr/lib/glib/include -I/usr/X11R6/include conftest.c >/dev/null 2>conftest.out
+configure:2239: gcc -o conftest  -Wall  -I/usr/lib/glib/include -I/usr/X11R6/include  conftest.c  -lpthread 1>&5
+configure:2266: checking for fcntl.h
+configure:2276: cc -E  -I/usr/lib/glib/include -I/usr/X11R6/include conftest.c >/dev/null 2>conftest.out
+configure:2266: checking for sys/ioctl.h
+configure:2276: cc -E  -I/usr/lib/glib/include -I/usr/X11R6/include conftest.c >/dev/null 2>conftest.out
+configure:2266: checking for sys/time.h
+configure:2276: cc -E  -I/usr/lib/glib/include -I/usr/X11R6/include conftest.c >/dev/null 2>conftest.out
+configure:2266: checking for unistd.h
+configure:2276: cc -E  -I/usr/lib/glib/include -I/usr/X11R6/include conftest.c >/dev/null 2>conftest.out
+configure:2309: checking for sys/soundcard.h
+configure:2319: cc -E  -I/usr/lib/glib/include -I/usr/X11R6/include conftest.c >/dev/null 2>conftest.out
+configure:2309: checking for machine/soundcard.h
+configure:2319: cc -E  -I/usr/lib/glib/include -I/usr/X11R6/include conftest.c >/dev/null 2>conftest.out
+configure:2315: machine/soundcard.h: No such file or directory
+configure: failed program was:
+#line 2314 "configure"
+#include "confdefs.h"
+#include <machine/soundcard.h>
+configure:2359: checking for sys/poll.h
+configure:2369: cc -E  -I/usr/lib/glib/include -I/usr/X11R6/include conftest.c >/dev/null 2>conftest.out
+configure:2392: checking for poll
+configure:2420: gcc -o conftest  -Wall  -I/usr/lib/glib/include -I/usr/X11R6/include  conftest.c  -lpthread 1>&5
+configure:2512: checking whether byte ordering is bigendian
+configure:2530: gcc -c  -Wall  -I/usr/lib/glib/include -I/usr/X11R6/include conftest.c 1>&5
+configure:2545: gcc -c  -Wall  -I/usr/lib/glib/include -I/usr/X11R6/include conftest.c 1>&5
+configure: In function `main':
+configure:2540: `not' undeclared (first use in this function)
+configure:2540: (Each undeclared identifier is reported only once
+configure:2540: for each function it appears in.)
+configure:2540: parse error before `big'
+configure: failed program was:
+#line 2534 "configure"
+#include "confdefs.h"
+#include <sys/types.h>
+#include <sys/param.h>
+int main() {
+
+#if BYTE_ORDER != BIG_ENDIAN
+ not big endian
+#endif
+; return 0; }

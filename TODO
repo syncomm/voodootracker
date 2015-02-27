@@ -1,0 +1,77 @@
+The following is the TODO list for Voodoo Tracker.
+--------------------------------------------------
+
+Complete source re-organization and code cleanup!
+
+PLAYER: 
+	
+*	mod.rstchip.09, mod.savage, spotlight madmix, 
+	alice d.,abyss-tr -- fix note retriggering 
+	when only instrument column is set (this 
+	is weird, but I think I found out what it 
+	is), there's also some trouble with the 
+	3xx command...
+*	Find the bug which causes ch->chFinalPitch to become zero
+	in tru_funk.mod.
+*	What happens if you use 9xx to jump behind the loop end
+
+SAMPLE EDITOR: 
+
+*	Normalize, volume up/down, fade in/out functions.
+*	Put back the sample playing monitor ("mixer position").
+*	When changing loop points in a sample, retriggering the
+	note on the keyboard uses the old loop points --> upload 
+	new sample data to driver after editing.
+*	Add support for IFF and RAW formats
+*	Add Cd-ripping support
+* 	Support display window panning (middle mousebutton and
+	a hscrollbar under the sample display)
+*	Cut, copy & paste support
+	
+INSTRUMENT EDITOR:
+
+*	Add gtk keyboard widget for managing keyboard split.
+*	Add support for loading/saving FT2 instruments
+*	Write a gtk+ widget for graphical editing of the
+	envelope lists, which should look like the fasttracker2
+	envelope editor.
+	
+VIRTUAL SYNTHS:
+
+*	Add Synth tab
+*	Start work on first virtual synth
+*	Work on plugin method for additional synths
+*	NOTE: Virtual Synths will create sounds to dump into
+	the current sample.
+	
+MIXER:
+
+*	Add mixer tab to notbook.
+*	Move volume and pitchblend to mixer tab
+*	Add channel panning/volume controls to mixer tab
+*	Add clipping indicator to mixer tab
+*	Some asm-optimized mixing code would be nice 
+	
+PREFERENCES: 
+
+*	Remove from notebook and provide it with it's own 
+	notebook dialog.Impliment loading and auto saving.
+	(gnome_properties_*())
+
+CONTROL PANEL:
+
+*	Use a clist to display and manage the pattern order
+
+SCOPES: 
+
+*	Make it work with large fragsizes
+
+FILE REQUESTER: 
+
+*	Add support for bookmarks/archives.
+*	Add file filters
+*	Add play button to preview samples
+
+MIDI:
+
+*	Work on MIDI support

@@ -1,0 +1,21 @@
+Project Coordinator and Maintainer
+==================================
+
+	Greg Hayes		<ghayes@syncomm.org>
+	
+Borrowed Code
+=============
+
+	Michael Krause          <m.krause@tu-harburg.de> 
+	
+	Creator of soundtracker and author of much of 
+	the code currently used code in Voodoo Tracker.
+
+Contributers
+============
+
+	Jan Spurny (Broukoid) <broukoid@iol.cz>
+
+	Added loading and saving of XI
+	Fixed bugs in WAV loading 
+	Fixed sensitivity for instrument editor mainbox

@@ -1,0 +1,79 @@
+
+          @@@  @@@   @@@@@@    @@@@@@   @@@@@@@    @@@@@@    @@@@@@
+          @@@  @@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@
+          @@!  @@@  @@!  @@@  @@!  @@@  @@!  @@@  @@!  @@@  @@!  @@@
+          !@!  @!@  !@!  @!@  !@!  @!@  !@!  @!@  !@!  @!@  !@!  @!@
+          @!@  !@!  @!@  !@!  @!@  !@!  @!@  !@!  @!@  !@!  @!@  !@!
+          !@!  !!!  !@!  !!!  !@!  !!!  !@!  !!!  !@!  !!!  !@!  !!!
+          :!:  !!:  !!:  !!!  !!:  !!!  !!:  !!!  !!:  !!!  !!:  !!!
+           ::!!:!   :!:  !:!  :!:  !:!  :!:  !:!  :!:  !:!  :!:  !:!
+            ::::    ::::: ::  ::::: ::   :::: ::  ::::: ::  ::::: ::
+             :       : :  :    : :  :   :: :  :    : :  :    : :  :
+
+
+     @@@@@@@  @@@@@@@    @@@@@@    @@@@@@@  @@@  @@@  @@@@@@@@  @@@@@@@
+     @@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@  @@@  @@@@@@@@  @@@@@@@@
+       @@!    @@!  @@@  @@!  @@@  !@@       @@!  !@@  @@!       @@!  @@@
+       !@!    !@!  @!@  !@!  @!@  !@!       !@!  @!!  !@!       !@!  @!@
+       @!!    @!@!!@!   @!@!@!@!  !@!       @!@@!@!   @!!!:!    @!@!!@!
+       !!!    !!@!@!    !!!@!!!!  !!!       !!@!!!    !!!!!:    !!@!@!
+       !!:    !!: :!!   !!:  !!!  :!!       !!: :!!   !!:       !!: :!!
+       :!:    :!:  !:!  :!:  !:!  :!:       :!:  !:!  :!:       :!:  !:!
+        ::    ::   :::  ::   :::   ::: :::   ::  :::   :: ::::  ::   :::
+        :      :   : :   :   : :   :: :: :   :   :::  : :: ::    :   : :
+
+
+      			         Version 0.2.0
+						
+  Voodoo Tracker is a project that aims to harness and extend the power of 
+conventional trackers. Imagine self contained digital studio; complete and 
+ready for your modern music needs. Additionaly Voodoo will provide an 
+interface that is designed for live preformances. No other tracker will let 
+you crossfade, sequence, and mix your favorite mods in realtime. Voodoo 
+Tracker will be the  turntables of the digital generation.  
+
+Current Features:
+	* Gnome compliance
+	* Session management
+	* XM and MOD support
+	* Sample editor
+	* Instrument editor with support for
+	    - Volume envelope
+            - Panning envelope
+            - Vibrato (sine, square, and sawtooth)
+            - Volume and vibrato sweeps
+        * FT2 shortcuts
+         
+Planned Features:
+	* Support for all module formats supported by Mikmod (including IT)
+	* Midi support
+	* Cd ripping of samples
+	* Full DJ Studio with virtual machines for mixing, x-fading,
+	  filtering, and distorting (flanger, echo, reverb, delay, 
+	  etc.) patterns, tracks, instruments, and samples.
+	* Virtual Synths for creating plucked string, MC-303
+	  sounds, TR-808 beats, etc. for sample editor.
+	* The ability to record a session to wav for later conversion into
+	  mp3 or realaudio (or possibly direct conversion to these formats).
+	* Plugin support for the edition of other virtual components 
+	  and special effects.
+	* esd support?
+	* ALSA support?
+		  
+Requirements:
+	* Gnome 1.0
+	* Gtk 1.2
+	* A working OSS sound setup
+	
+Currently Voodoo is in the early stages of development. This should be 
+considered a DEVELOPERS ONLY RELEASE. As of this time Voodoo is not  fully
+functional, rather a proof of concept.
+
+      ----> Please DO NOT send bug reports for KNOWN bugs (see <---- 
+      ----> TODO file in this directory). However, if you are  <----
+      ----> interested in helping develop Voodoo Tracker please<----
+      ----> read the HACKING file in this directory.           <----
+
+Visit http://www.syncomm.org/voodoo for the latest updates and developer
+snapshots.
+

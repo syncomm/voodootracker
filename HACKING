@@ -1,0 +1,17 @@
+
+       @@@  @@@   @@@@@@    @@@@@@@  @@@  @@@  @@@  @@@  @@@   @@@@@@@@
+       @@@  @@@  @@@@@@@@  @@@@@@@@  @@@  @@@  @@@  @@@@ @@@  @@@@@@@@@
+       @@!  @@@  @@!  @@@  !@@       @@!  !@@  @@!  @@!@!@@@  !@@
+       !@!  @!@  !@!  @!@  !@!       !@!  @!!  !@!  !@!!@!@!  !@!
+       @!@!@!@!  @!@!@!@!  !@!       @!@@!@!   !!@  @!@ !!@!  !@! @!@!@
+       !!!@!!!!  !!!@!!!!  !!!       !!@!!!    !!!  !@!  !!!  !!! !!@!!
+       !!:  !!!  !!:  !!!  :!!       !!: :!!   !!:  !!:  !!!  :!!   !!:
+       :!:  !:!  :!:  !:!  :!:       :!:  !:!  :!:  :!:  !:!  :!:   !::
+       ::   :::  ::   :::   ::: :::   ::  :::   ::   ::   ::   ::: ::::
+        :   : :   :   : :   :: :: :   :   :::  :    ::    :    :: :: :
+
+
+  This document will be used to keep developers current with the direction
+of Voodoo Tracker. It will explain the current implemted ideas and show where
+work needs to be done. If you are just looking for a quick list of
+unimplemented or broken features see the TODO file. 

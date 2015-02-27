@@ -1,0 +1,60 @@
+--- sample-editor.c~	Fri Mar 12 09:16:14 1999
++++ sample-editor.c	Sun Jul  9 15:03:46 2000
+@@ -5,6 +5,10 @@
+  *	       		  - Sample Editor -					 *
+  *												 *
+  *   Copyright (C) 1999 Greg Hayes, all rights reserved  *
++ *
++ Broukoid	Jul,9 2000	Corrected WAV loading function
++				for different format chunk length
++
+  *                                                       *
+  *              See COPYING for information              *
+  *                                                       *
+@@ -814,8 +818,10 @@
+     void *sbuf;
+     STInstrument *instr;
+     const char *samplename;
+-    guint8 wh[44];
+-    int len;
++    guint8 wh[46];
++    int len, tmplen, fmtsize;
++
++    fprintf(stderr, "\nLoading file '%s'...\n", fn);
+ 
+     gtk_widget_hide(loadwindow);
+ 
+@@ -841,15 +847,17 @@
+ 	fprintf(stderr, "Hmm, strange WAV. I am a bug. Report me.\n");
+ 	goto errnobuf;
+     }
+-
+-    len = get_le_32(wh + 40);
++    fmtsize=get_le_32(wh + 16);
++    len = get_le_32(wh + 24 + fmtsize);
++    fprintf(stderr, "Data length: %dbytes.\n", len);
+     if(!(sbuf = malloc(len))) {
+-	fprintf(stderr, "Out of memory.\n");
++	fprintf(stderr, "Out of memory (%dbytes).\n", len);
+ 	goto errnobuf;
+     }
+ 
+-    if(fread(sbuf, 1, len, f) != len) {
+-	fprintf(stderr, "File error.\n");
++    fseek(f, 28 + fmtsize, SEEK_SET);
++    if((tmplen=fread(sbuf, 1, len, f)) != len) {
++	fprintf(stderr, "File error. (was len=%dbytes).\n", tmplen);
+ 	goto errnodata;
+     }
+ 
+@@ -879,8 +887,9 @@
+ 
+     sample_editor_modify_wav_sample(current_sample);
+ 
+-    instrument_editor_update();
++    instrument_editor_enable();
+     sample_editor_update();
++    instrument_editor_update();
+     
+     fclose(f);
+     return;

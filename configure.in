@@ -1,0 +1,68 @@
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(app/endian-conv.h)
+AM_INIT_AUTOMAKE(voodootracker, 0.2.6)
+AM_CONFIG_HEADER(config.h)
+AM_MAINTAINER_MODE
+
+AM_ACLOCAL_INCLUDE(macros)
+
+GNOME_INIT
+GNOME_X_CHECKS
+
+dnl -----------------------------------------------------------------------
+dnl Test for GCC
+dnl -----------------------------------------------------------------------
+
+AC_PROG_CC
+
+if test $GCC != yes; then
+	echo "Fatal error: Need gcc"
+	exit 1
+fi
+
+CFLAGS="$CFLAGS -Wall"
+
+AC_PROG_RANLIB
+
+dnl -----------------------------------------------------------------------
+dnl Test for libpthread
+dnl -----------------------------------------------------------------------
+
+AC_CHECK_HEADERS(pthread.h)
+AC_CHECK_LIB(pthread, pthread_create,
+	LIBS="$LIBS -lpthread",
+	AC_MSG_ERROR(Can't find libpthread. This is absolutely necessary.),)
+
+dnl -----------------------------------------------------------------------
+dnl Checks for header files
+dnl -----------------------------------------------------------------------
+
+AC_HEADER_STDC
+AC_CHECK_HEADERS(fcntl.h sys/ioctl.h sys/time.h unistd.h,, AC_MSG_ERROR(Need those header files.))
+
+dnl -----------------------------------------------------------------------
+dnl Test for OSS headers
+dnl -----------------------------------------------------------------------
+
+AC_CHECK_HEADERS(sys/soundcard.h machine/soundcard.h)
+if test "${ac_cv_header_sys_soundcard_h}" = "yes" || \
+    test "${ac_cv_header_machine_soundcard_h}" = "yes"; then
+    AC_DEFINE(DRIVER_OSS)
+fi 
+
+dnl -----------------------------------------------------------------------
+dnl Test for poll()
+dnl -----------------------------------------------------------------------
+
+HAVE_POLL="no"
+AC_CHECK_HEADERS(sys/poll.h, AC_CHECK_FUNCS(poll, HAVE_POLL="yes", AC_MSG_ERROR(sys/poll.h without poll)))
+
+if test $HAVE_POLL != yes; then
+	AC_CHECK_FUNCS(select,, AC_MSG_ERROR(no poll and no select?!?))
+fi
+
+
+AC_C_BIGENDIAN
+
+AC_OUTPUT(Makefile macros/Makefile app/Makefile app/drivers/Makefile app/mixers/Makefile voodoo.spec)

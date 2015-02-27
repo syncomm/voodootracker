@@ -1,0 +1,61 @@
+/* config.h.in.  Generated automatically from configure.in by autoheader.  */
+
+/* Define if you have the ANSI C header files.  */
+#undef STDC_HEADERS
+
+/* Define if your processor stores words with the most significant
+   byte first (like Motorola and SPARC, unlike Intel and VAX).  */
+#undef WORDS_BIGENDIAN
+
+#undef DRIVER_OSS
+#undef HAVE_LC_MESSAGES
+#undef HAVE_STPCPY
+#undef PACKAGE
+#undef VERSION
+#undef ENABLE_NLS
+#undef HAVE_CATGETS
+#undef HAVE_GETTEXT
+#undef HAVE_LIBSM
+#undef HAVE_PROGRAM_INVOCATION_SHORT_NAME
+#undef HAVE_PROGRAM_INVOCATION_NAME
+#undef HAVE_DEVGTK
+
+/* Define if you have the poll function.  */
+#undef HAVE_POLL
+
+/* Define if you have the select function.  */
+#undef HAVE_SELECT
+
+/* Define if you have the <X11/SM/SMlib.h> header file.  */
+#undef HAVE_X11_SM_SMLIB_H
+
+/* Define if you have the <fcntl.h> header file.  */
+#undef HAVE_FCNTL_H
+
+/* Define if you have the <machine/soundcard.h> header file.  */
+#undef HAVE_MACHINE_SOUNDCARD_H
+
+/* Define if you have the <pthread.h> header file.  */
+#undef HAVE_PTHREAD_H
+
+/* Define if you have the <sys/ioctl.h> header file.  */
+#undef HAVE_SYS_IOCTL_H
+
+/* Define if you have the <sys/poll.h> header file.  */
+#undef HAVE_SYS_POLL_H
+
+/* Define if you have the <sys/soundcard.h> header file.  */
+#undef HAVE_SYS_SOUNDCARD_H
+
+/* Define if you have the <sys/time.h> header file.  */
+#undef HAVE_SYS_TIME_H
+
+/* Define if you have the <unistd.h> header file.  */
+#undef HAVE_UNISTD_H
+
+/* Name of package */
+#undef PACKAGE
+
+/* Version number of package */
+#undef VERSION
+
