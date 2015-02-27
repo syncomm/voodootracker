@@ -1,4 +1,3 @@
-<font color="red">
 ```
           @@@  @@@   @@@@@@    @@@@@@   @@@@@@@    @@@@@@    @@@@@@
           @@@  @@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@
@@ -25,13 +24,12 @@
 
 
 ```
-</font>
 ---
-
-## What is VoodooTracker?
 
 > The current source base of VoodooTracker is abandoned, this page is proveded as a reference.
 > If I find time again to work on the project, development will start here
+
+## What is VoodooTracker?
 
 VoodooTracker was a project that aimed to create an ultramodern “FastTracker 2 style” music sequencer. Additionally VoodooTracker carried the ambitious goal of designing an interface made for live performances via the Internet or a DJ booth.
 
